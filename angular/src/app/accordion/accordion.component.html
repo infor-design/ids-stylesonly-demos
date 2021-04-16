@@ -1,5 +1,5 @@
 <div class="accordion" data-demo-set-links="true" data-options=' "allowOnePane": false '>
-  <div class="accordion-header hide-focus has-chevron" id="header-one">
+  <div (click)="toggleAccordion($event)" class="accordion-header hide-focus has-chevron" id="header-one">
     <a aria-haspopup="true" data-automation-id="accordion-a-header-one" href="#" id="warehouse-location" role="button">
       <span>
         Warehouse Location
@@ -15,7 +15,7 @@
       </span>
     </button>
   </div>
-  <div class="accordion-pane" style="height: 0px">
+  <div class="accordion-pane" style="height: 0;">
     <div class="accordion-content">
       <p>
         Remix, optimize, "B2B, iterate?" Best-of-breed efficient beta-test; social cutting-edge: rich magnetic
@@ -29,7 +29,7 @@
       </p>
     </div>
   </div>
-  <div class="accordion-header hide-focus has-chevron" id="header-two">
+  <div (click)="toggleAccordion($event)" class="accordion-header hide-focus has-chevron" id="header-two">
     <a aria-haspopup="true" data-automation-id="accordion-a-sort-by" href="#" id="sort-by" role="button">
       <span>
         Sort By
@@ -77,7 +77,7 @@
       </div>
     </div>
   </div>
-  <div class="accordion-header hide-focus has-chevron" id="header-three">
+  <div (click)="toggleAccordion($event)" class="accordion-header hide-focus has-chevron" id="header-three">
     <a aria-haspopup="true" data-automation-id="accordion-a-brand-name" href="#" id="brand-name" role="button">
       <span>
         Brand Name
@@ -108,7 +108,7 @@
       </p>
     </div>
   </div>
-  <div class="accordion-header hide-focus has-chevron" id="header-four">
+  <div (click)="toggleAccordion($event)" class="accordion-header hide-focus has-chevron" id="header-four">
     <a aria-haspopup="true" data-automation-id="accordion-a-material" href="#" id="material" role="button">
       <span>
         Material
